@@ -1,0 +1,152 @@
+/*Desktop First Common Breakpoints*/
+
+
+/*tablet landscape and desktop layout (960px or more) */
+@media only screen and (min-width: 960px) {
+    /*...tablet landscape and desktop styles */
+}
+
+/*table portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+    /*... tablet portrait styles */
+    html {
+        font-size: 83.75%;
+    }
+    #title-paragraph {
+        /*font-size: 1rem;*/
+
+    }
+}
+
+/*mobile portrait layout (481px to 768px) */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    /*....small tablet portrait styles */
+    #title-paragraph {
+        font-size: 1rem;
+    }
+
+}
+/* mobile landscape layout (568px to 767px) */
+@media only screen and (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+        font-size: 73%;
+    }
+    .ma-container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 98%;
+    }
+    .section__title--paragraph {
+        width: 100%;
+    }
+    #title-paragraph {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    #contact__form--group {
+        width: 90%;
+    }
+    form .contact__form--text {
+        height: 18px;
+        letter-spacing: 1px;
+    }
+    form .contact__form:nth-child(3) {
+        margin-bottom: -.33em;
+    }
+    form .contact__form--text:nth-child(4) {
+        letter-spacing: 1px;
+    }
+    .contact__form  .contact__form--label {
+        bottom: 40px;
+    }
+
+    .contact__form .contact__form--text:focus+.contact__form--label,
+    .contact__form .contact__form--text.not-empty+.contact__form--label {
+        -webkit-transform: scale(.80) translateY(-30px);
+                transform: scale(.80) translateY(-30px);
+    }
+    .contact__form .contact__form--prompt {
+        bottom: 23px
+    }
+
+    .contact__form:nth-child(3) .contact__form--prompt {
+        bottom: -18px;
+    }
+    form .submit {
+        height: 40px;
+        font-size: 1.33rem;
+        letter-spacing: 1px;
+    }
+    #error__message h4,
+    #success__message h4 {
+        font-size: 1.33rem;
+        letter-spacing: 3px;
+    }
+    #error__message p,
+    #success__message p {
+        font-size: 1.125rem;
+        letter-spacing: 2px;
+    }
+
+}
+
+/*mobile portrait layout (479px or less) */
+@media only screen and (max-width: 480px) {
+    /*...mobile portrait styles */
+    html {
+        font-size: 62.5%;
+    }
+    .ma-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section__title--paragraph {
+        width: 100%;
+    }
+    #title-paragraph {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .8375rem;
+        letter-spacing: 1px;
+    }
+    #contact__form--group {
+        width: 90%;
+    }
+    form .contact__form--text {
+        height: 18px;
+        letter-spacing: 1px;
+    }
+    form .contact__form--text:nth-child(4) {
+        letter-spacing: 1px;
+    }
+    .contact__form  .contact__form--label {
+        bottom: 35px;
+    }
+
+    .contact__form .contact__form--text:focus+.contact__form--label,
+    .contact__form .contact__form--text.not-empty+.contact__form--label {
+        -webkit-transform: scale(.80) translateY(-30px);
+                transform: scale(.80) translateY(-30px);
+    }
+    .contact__form .contact__form--prompt {
+        bottom: 20px
+    }
+    .contact__form:nth-child(3) .contact__form--prompt {
+        bottom: -15px;
+    }
+    form .submit {
+        height: 40px;
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+    #error__message h4,
+    #success__message h4 {
+        letter-spacing: 2px;
+    }
+    #error__message p,
+    #success__message p {
+        letter-spacing: 1px;
+    }
+}

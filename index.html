@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>JS-Contact-Form</title>
+
+   <!--favicon -->
+   <link rel="shortcut icon" href="favicon.ico">
+   <!--google fonts-->
+   <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:100,200,400,500&display=swap"
+         rel="stylesheet">
+<!--material-ui-icons  -->
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+   <!--normalize css -->
+   <link rel="stylesheet" href="css/normalize.css">
+   <!--material-ui css-->
+   <link rel="stylesheet" href="css/materialize.min.css" >
+   <!-- jquery-ui css -->
+   <link rel="stylesheet" href="css/jquery-ui.min.css">
+   <!--main css-->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- responsive css -->
+   <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+<section id="contact" class="section">
+   <div class="ma-container">
+      <div class="section__title--text">
+         <h2 class="title-heading"><strong>Contact Me</strong></h2>
+      </div>
+      <div id="section__title--paragraph" class="section__title--paragraph">
+         <h5 id="title-paragraph">If you have any questions or wish to collaborate, send me a message!</h5>
+      </div>
+      <!-- begin of contact form -->
+      <div class="row" id="contact__form--group">
+         <form class="col s12">
+            <div class="row">
+               <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label class="input-label" for="icon_prefix">First and last name</label>
+               </div>
+               <div class="input-field col s12">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label class="input-label" for="icon_telephone">Telephone</label>
+               </div>
+               <div class="input-field col s12">
+                  <i class="material-icons prefix">email</i>
+                  <input id="email" type="email" class="validate">
+                  <label class="input-label" for="email">Email</label>
+<!--                  <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>-->
+               </div>
+
+
+               <div class="row">
+                  <div class="input-field col s12">
+                     <i class="material-icons prefix">mode_edit</i>
+                     <textarea id="textarea1" class="materialize-textarea"></textarea>
+                     <label class="input-label" for="textarea1">Message</label>
+                  </div>
+               </div>
+            </div>
+
+            <div id="error__message">
+               <h4>Error!</h4>
+               <p>The following are error(s) in the form:</p>
+            </div>
+            <div id="success__message">
+               <h4>Success!</h4>
+               <p>Your message was sent successfully.</p>
+            </div>
+            <div class="contact__form">
+               <input type="button" id="contact__form--submit" class="contact__form--text submit"
+                      value="Send Message">
+            </div>
+         </form>
+      </div>
+      <!-- end of contact form -->
+   </div>
+</section>
+
+<!--jquery-->
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<!-- material-ui js-->
+<script type="text/javascript" src="js/materialize.js"></script>
+<!-- jquery ui -->
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<!--main js-->
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

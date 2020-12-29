@@ -1,0 +1,209 @@
+/*-----Stylesheet for Project Name-----*/
+
+ /* =========================================
+              Website Resets
+============================================ */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+*::-moz-focus-inner {
+  border: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* =========================================
+                Root, Html, and Body
+============================================ */
+:root {
+  --light-blue: #7898af;
+  --med-blue: #165287;
+  --light-gray: #e2e2e4;
+  --med-gray: #a9a9a9;
+  --dark-gray: #626262;
+  --black: #20212d;
+  --off-black: #393b3d;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  color: var(--black);
+  background-color: rgb(238, 236, 236);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: .8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+/* =========================================
+              Utility Classes
+============================================ */
+.ma-container-fluid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.ma-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 576px) {
+  .ma-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ma-container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .ma-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ma-container {
+    max-width: 1140px;
+  }
+}
+.section {
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.title-heading {
+  position: relative;
+  margin-bottom: 5rem;
+  padding: 2rem 0;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: .5em;
+  font-family: 'Lora', serif;
+  color: var(--med-blue);
+  letter-spacing: 0.5rem;
+}
+
+
+
+
+/* =========================================
+Contact
+============================================ */
+#contact {
+  padding-bottom: 2.5em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: var(--light-gray);
+}
+#contact .section__title--text {
+  margin-bottom: -2em;
+}
+
+#section__title--paragraph {
+  margin-bottom: 1em;
+  padding-bottom: 2em;
+}
+
+.section__title--paragraph {
+  text-align: center;
+}
+
+#title-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.input-field .prefix {
+  color: var(--med-blue) !important;
+}
+
+.input-label:focus {
+  color: var(--med-blue) !important;
+}
+
+
+
+/* label color */
+.input-field label {
+  font-family: "Lora", serif;
+  letter-spacing: 1px;
+  color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  /*border-bottom: 1px solid #000;*/
+  border-bottom: 2px solid var(--med-blue) !important;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
