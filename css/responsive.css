@@ -108,7 +108,8 @@
     #title-paragraph {
         margin-left: auto;
         margin-right: auto;
-        font-size: .8375rem;
+        /*font-size: .8375rem;*/
+        font-size: .9rem;
         letter-spacing: 1px;
     }
     #contact__form--group {
