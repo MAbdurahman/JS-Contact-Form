@@ -144,21 +144,26 @@ $(document).ready(function () {
         $('#contact__form--submit').val('Valid Form');
         $('#contact__form--submit').addClass('valid');
 
-        $('#error__message').hide(500);
-        setTimeout(function () {
-            $('#contact__form--submit').val('Sending Message...');
-        }, 500);
+        if ($('#contact__form--submit').hasClass('submitted')) {
+            $('#contact__form--submit').val('Form has been sent!');
+        }
 
-        // $('#contact__form--submit').prop('disable', true);
-
-        if ($('#contact__form--submit').hasClass('valid')) {
+        if (!$('#contact__form--submit').hasClass('submitted')) {
+            $('#error__message').hide(500);
             setTimeout(function () {
-                $('#contact__form--submit').val('Message Sent');
-                $('#success__message').show(1000);
-            }, 3000);
+                $('#contact__form--submit').val('Sending Message...');
+            }, 500);
 
+            if ($('#contact__form--submit').hasClass('valid')) {
+                setTimeout(function () {
+                    $('#contact__form--submit').val('Message Sent');
+                    $('#success__message').show(1000);
+                }, 3000);
+            }
             resetForm();
         }
+
+
     } //end of the performValidForm Function
 
     /**
@@ -201,10 +206,16 @@ $(document).ready(function () {
             }
         }
         if (!isPhoneValid) {
-            $('#error__message').append(`<p>Preferred pattern is:  123-456-7890!!</p>`);
-            message = "Preferred pattern is:  123-456-7890!";
-            getPrompt(message, "contact__form--phone-prompt", red);
+            if ($('#icon_telephone').val().length === 0) {
+                message = "Your phone number is optional!";
+                getPrompt(message, "contact__form--phone-prompt", green);
 
+            } else {
+                $('#error__message').append(`<p>Preferred pattern is:  123-456-7890!!</p>`);
+                message = "Preferred pattern is:  123-456-7890!";
+                getPrompt(message, "contact__form--phone-prompt", red);
+
+            }
         }
         if (!isEmailValid) {
             if ($('#email').val().length === 0) {
@@ -235,7 +246,7 @@ $(document).ready(function () {
      * performInvalidForm function.
      */
     function checkFormValidation() {
-        if (isNameValid && isEmailValid && isMessageValid) {
+        if (isNameValid && isPhoneValid && isEmailValid && isMessageValid) {
             performValidForm();
 
         } else {
@@ -266,6 +277,10 @@ $(document).ready(function () {
         $('#contact__form #textarea1').val('').focus(null).removeClass('focus-visible');
         getPrompt(message, "contact__form--message-prompt", color);
         $('#contact__form #message__label').removeClass('active');
+
+        // $('#contact__form--submit').prop('disabled', true);
+        // $('#contact__form--submit').prop('isDisabled', true);
+        $('#contact__form--submit').addClass('submitted');
 
     }
 
