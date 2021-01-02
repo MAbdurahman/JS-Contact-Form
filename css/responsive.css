@@ -1,5 +1,7 @@
-/*Desktop First Common Breakpoints*/
-
+/* =========================================
+           JS-Contact-Form responsive.css
+           Desktop First Common Breakpoints
+============================================ */
 
 /*tablet landscape and desktop layout (960px or more) */
 @media only screen and (min-width: 960px) {
@@ -24,7 +26,22 @@
     #title-paragraph {
         font-size: 1rem;
     }
+    .contact__form .contact__form--prompt {
+        left: 50px;
+        bottom: -10px;
+    }
 
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+    #contact__form--message-prompt {
+        bottom: -3px;
+    }
+    #error__message p,
+    #success__message p {
+        font-size: .8rem;
+        letter-spacing: 1px;
+    }
 }
 /* mobile landscape layout (568px to 767px) */
 @media only screen and (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
@@ -45,8 +62,21 @@
         font-size: 1.2rem;
         letter-spacing: 1px;
     }
+    /*.input-field .prefix,*/
+    /*.input-field label {*/
+    /*    font-size: 1rem;*/
+    /*}*/
     #contact__form--group {
-        width: 90%;
+        width: 96%;
+    }
+    .contact__form .contact__form--prompt {
+        bottom: -8px;
+        left: 40px;
+    }
+
+    #contact__form--message-prompt {
+        bottom: -3px;
+        left: 40px;
     }
     form .contact__form--text {
         height: 18px;
@@ -58,21 +88,9 @@
     form .contact__form--text:nth-child(4) {
         letter-spacing: 1px;
     }
-    .contact__form  .contact__form--label {
-        bottom: 40px;
-    }
 
-    .contact__form .contact__form--text:focus+.contact__form--label,
-    .contact__form .contact__form--text.not-empty+.contact__form--label {
-        -webkit-transform: scale(.80) translateY(-30px);
-                transform: scale(.80) translateY(-30px);
-    }
-    .contact__form .contact__form--prompt {
-        bottom: 23px
-    }
-
-    .contact__form:nth-child(3) .contact__form--prompt {
-        bottom: -18px;
+    #contact__form--message-prompt {
+        bottom: -3px;
     }
     form .submit {
         height: 40px;
@@ -93,7 +111,7 @@
 }
 
 /*mobile portrait layout (479px or less) */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 375px) {
     /*...mobile portrait styles */
     html {
         font-size: 62.5%;
@@ -108,13 +126,17 @@
     #title-paragraph {
         margin-left: auto;
         margin-right: auto;
-        /*font-size: .8375rem;*/
-        font-size: .9rem;
+        font-size: .8rem;
         letter-spacing: 1px;
     }
     #contact__form--group {
-        width: 90%;
+        width: 96%;
     }
+    .contact__form .contact__form--prompt {
+        left: 35px;
+        bottom: -5px;
+    }
+
     form .contact__form--text {
         height: 18px;
         letter-spacing: 1px;
@@ -122,21 +144,21 @@
     form .contact__form--text:nth-child(4) {
         letter-spacing: 1px;
     }
-    .contact__form  .contact__form--label {
-        bottom: 35px;
-    }
+    /*.contact__form  .contact__form--label {*/
+    /*    bottom: 35px;*/
+    /*}*/
 
-    .contact__form .contact__form--text:focus+.contact__form--label,
-    .contact__form .contact__form--text.not-empty+.contact__form--label {
-        -webkit-transform: scale(.80) translateY(-30px);
-                transform: scale(.80) translateY(-30px);
-    }
-    .contact__form .contact__form--prompt {
-        bottom: 20px
-    }
-    .contact__form:nth-child(3) .contact__form--prompt {
-        bottom: -15px;
-    }
+    /*.contact__form .contact__form--text:focus+.contact__form--label,*/
+    /*.contact__form .contact__form--text.not-empty+.contact__form--label {*/
+    /*    -webkit-transform: scale(.80) translateY(-30px);*/
+    /*            transform: scale(.80) translateY(-30px);*/
+    /*}*/
+    /*.contact__form .contact__form--prompt {*/
+    /*    !*bottom: 20px*!*/
+    /*}*/
+    /*.contact__form:nth-child(3) .contact__form--prompt {*/
+    /*    bottom: -15px;*/
+    /*}*/
     form .submit {
         height: 40px;
         font-size: 1rem;

@@ -1,4 +1,6 @@
-/*-----Stylesheet for Project Name-----*/
+/* =========================================
+           JS-Contact-Form style.css
+============================================ */
 
  /* =========================================
               Website Resets
@@ -14,15 +16,18 @@
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+
 }
+
 *::-moz-focus-inner {
   border: 0;
+
 }
 
 *:focus {
   outline: none;
-}
 
+}
 /* =========================================
                 Root, Html, and Body
 ============================================ */
@@ -35,15 +40,18 @@
   --black: #20212d;
   --off-black: #393b3d;
   --white: #ffffff;
+
 }
 
 html {
   font-size: 100%;
+
 }
 
 html,
 body {
   height: 100vh;
+
 }
 
 body {
@@ -51,6 +59,7 @@ body {
   background-color: rgb(238, 236, 236);
   scroll-behavior: smooth;
   overflow-x: hidden;
+
 }
 
 h1,
@@ -60,6 +69,7 @@ h4,
 h5,
 h6 {
   font-family: "Lora", serif;
+
 }
 
 p {
@@ -67,6 +77,7 @@ p {
   font-size: .8125rem;
   font-weight: 400;
   line-height: 1.5;
+
 }
 /* =========================================
               Utility Classes
@@ -77,6 +88,7 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
 }
 
 .ma-container {
@@ -85,11 +97,13 @@ p {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
 }
 
 @media (min-width: 576px) {
   .ma-container {
     max-width: 540px;
+
   }
 }
 
@@ -98,18 +112,21 @@ p {
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
+
   }
 }
 
 @media (min-width: 992px) {
   .ma-container {
     max-width: 960px;
+
   }
 }
 
 @media (min-width: 1200px) {
   .ma-container {
     max-width: 1140px;
+
   }
 }
 .section {
@@ -117,6 +134,7 @@ p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+
 }
 
 .title-heading {
@@ -132,11 +150,8 @@ p {
   font-family: 'Lora', serif;
   color: var(--med-blue);
   letter-spacing: 0.5rem;
+
 }
-
-
-
-
 /* =========================================
 Contact
 ============================================ */
@@ -146,18 +161,23 @@ Contact
   height: -moz-fit-content;
   height: fit-content;
   background-color: var(--light-gray);
+
 }
+
 #contact .section__title--text {
   margin-bottom: -2em;
+
 }
 
 #section__title--paragraph {
   margin-bottom: 1em;
   padding-bottom: 2em;
+
 }
 
 .section__title--paragraph {
   text-align: center;
+
 }
 
 #title-paragraph {
@@ -171,18 +191,22 @@ Contact
 .input-field .prefix {
   color: var(--med-blue) !important;
   border: none; !important;
+
 }
 
 input-field .prefix.active {
   color: var(--med-blue) !important;
+
 }
 
 .input-label .active {
   color: var(--med-blue) !important;
+
 }
 
 .input-label:focus .prefix {
   color: var(--med-blue) !important;
+
 }
 
 input:not([type]):focus:not([readonly]),
@@ -201,6 +225,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 2px solid #165287;
   -webkit-box-shadow: 0 1px 0 0 #165287;
   box-shadow: 0 1px 0 0 #165287;
+
 }
 
 /* label color */
@@ -208,37 +233,37 @@ textarea.materialize-textarea:focus:not([readonly]) {
   font-family: "Lora", serif;
   font-weight: 600;
   letter-spacing: 2px;
-  /*color: #000;*/
   color: var(--med-blue);
 }
 /* label focus color */
 .input-field input[type=text]:focus + label {
-  /*color: #000;*/
   font-weight: 600;
   color: var(--med-blue);
+
 }
 /* label underline focus color */
 .input-field input[type=text]:focus {
   border-bottom: 2px solid var(--med-blue) !important;
   box-shadow: 0 1px 0 0 #000;
+
 }
 /* valid color */
 .input-field input[type=text].valid {
   border-bottom: 1px solid #000;
   box-shadow: 0 1px 0 0 #000;
+
 }
 /* invalid color */
 .input-field input[type=text].invalid {
   border-bottom: 1px solid #000;
   box-shadow: 0 1px 0 0 #000;
+
 }
  icon prefix focus color
 .input-field .prefix.active {
-  /*color: #000;*/
   color: var(--med-blue);
+
 }
-
-
 
 #error__message,
 #success__message {
@@ -255,20 +280,17 @@ textarea.materialize-textarea:focus:not([readonly]) {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+
 }
 
-
-
-
 #error__message {
-  /* background-color: #7c0d23; */
   background-color: #9a0220;
   color: var(--white);
   opacity: 0.8;
+
 }
 
 #success__message {
-  /* background-color: #0f7c0d; */
   background-color: #335536;
   color: var(--white);
   opacity: 1;
@@ -280,6 +302,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   font-family: 'Lora', serif;
   font-size: 1.3rem;
   letter-spacing: 4px;
+
 }
 
 #error__message p,
@@ -287,6 +310,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   letter-spacing: 2px;
+
 }
 
 #success__message {
@@ -298,16 +322,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
   display: none;
 
 }
-/*.contact__form .contact__form--prompt {*/
-/*  position: absolute;*/
-/*  left: 3px;*/
-/*  bottom: 30px;*/
-/*  display: block;*/
-/*}*/
 
-/*.contact__form:nth-child(4) .contact__form--prompt {*/
-/*  bottom: -25px;*/
-/*}*/
 .contact__form .contact__form--prompt {
   position: absolute;
   left: 60px;
@@ -355,9 +370,11 @@ form .submit:hover {
   background-position: 100%;
   box-shadow: 0 9px #999;
   cursor: pointer;
+
 }
 
 form .submit:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+
 }
