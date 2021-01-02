@@ -161,9 +161,8 @@ $(document).ready(function () {
                 }, 3000);
             }
             resetForm();
+
         }
-
-
     } //end of the performValidForm Function
 
     /**
@@ -278,8 +277,6 @@ $(document).ready(function () {
         getPrompt(message, "contact__form--message-prompt", color);
         $('#contact__form #message__label').removeClass('active');
 
-        // $('#contact__form--submit').prop('disabled', true);
-        // $('#contact__form--submit').prop('isDisabled', true);
         $('#contact__form--submit').addClass('submitted');
 
     }

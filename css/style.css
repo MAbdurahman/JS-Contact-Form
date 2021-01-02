@@ -339,11 +339,13 @@ form .submit {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
+  transition: all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  -webkit-transition: all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  -moz-transition: all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  -ms-transition: all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  -o-transition: all .333s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  box-shadow: 0 9px #999;
+  box-shadow: 0 9px 6px -6px black;
 }
 
 form .submit:hover {
@@ -351,4 +353,11 @@ form .submit:hover {
   color: var(--med-blue);
   border: 1px solid var(--med-gray);
   background-position: 100%;
+  box-shadow: 0 9px #999;
+  cursor: pointer;
+}
+
+form .submit:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
