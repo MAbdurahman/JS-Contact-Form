@@ -210,7 +210,7 @@ $(document).ready(function () {
                 getPrompt(message, "contact__form--phone-prompt", green);
 
             } else {
-                $('#error__message').append(`<p>Preferred pattern is:  123-456-7890!!</p>`);
+                $('#error__message').append(`<p>Preferred phone pattern is:  123-456-7890!!</p>`);
                 message = "Preferred pattern is:  123-456-7890!";
                 getPrompt(message, "contact__form--phone-prompt", red);
 
