@@ -62,10 +62,7 @@
         font-size: 1.2rem;
         letter-spacing: 1px;
     }
-    /*.input-field .prefix,*/
-    /*.input-field label {*/
-    /*    font-size: 1rem;*/
-    /*}*/
+
     #contact__form--group {
         width: 96%;
     }
@@ -144,21 +141,7 @@
     form .contact__form--text:nth-child(4) {
         letter-spacing: 1px;
     }
-    /*.contact__form  .contact__form--label {*/
-    /*    bottom: 35px;*/
-    /*}*/
 
-    /*.contact__form .contact__form--text:focus+.contact__form--label,*/
-    /*.contact__form .contact__form--text.not-empty+.contact__form--label {*/
-    /*    -webkit-transform: scale(.80) translateY(-30px);*/
-    /*            transform: scale(.80) translateY(-30px);*/
-    /*}*/
-    /*.contact__form .contact__form--prompt {*/
-    /*    !*bottom: 20px*!*/
-    /*}*/
-    /*.contact__form:nth-child(3) .contact__form--prompt {*/
-    /*    bottom: -15px;*/
-    /*}*/
     form .submit {
         height: 40px;
         font-size: 1rem;
